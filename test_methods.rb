@@ -30,4 +30,9 @@ class TestMethods < Minitest::Test
         t = [1, 2, 3, 4]
         assert_equal([3, 4, 1, 2], t.my_rotate(-2))
     end
+
+    def test_hash_my_empty_returns_true
+        h = {}
+        assert_equal(true, h.my_empty?)
+    end
 end

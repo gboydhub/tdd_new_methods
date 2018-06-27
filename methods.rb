@@ -6,6 +6,8 @@ class Array
             newpos = cur_index + rot
             if newpos >= self.length
                 newpos -= self.length
+            elsif newpos < 0
+                newpos += self.length
             end
             newarr[newpos] = self[cur_index]
             cur_index += 1

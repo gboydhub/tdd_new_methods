@@ -50,4 +50,9 @@ class TestMethods < Minitest::Test
         s = 'a'
         assert_equal('a', s.my_reverse())
     end
+
+    def test_string_my_reverse_switches_2_letters
+        s = 'ab'
+        assert_equal('ba', s.my_reverse())
+    end
 end

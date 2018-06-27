@@ -10,4 +10,9 @@ class TestMethods < Minitest::Test
         t = []
         assert_equal(Array, t.my_rotate().class)
     end
+
+    def test_my_rotate_returns_same_data
+        t = [1]
+        assert_equal([1], t.my_rotate(0))
+    end
 end

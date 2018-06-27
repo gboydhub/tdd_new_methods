@@ -16,3 +16,9 @@ class Array
         newarr
     end
 end
+
+class Hash
+    def my_empty?()
+        true
+    end
+end

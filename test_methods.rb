@@ -35,4 +35,9 @@ class TestMethods < Minitest::Test
         h = {}
         assert_equal(true, h.my_empty?)
     end
+
+    def test_hash_my_empty_returns_false
+        h = {:hi => 2}
+        assert_equal(false, h.my_empty?)
+    end
 end

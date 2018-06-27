@@ -40,4 +40,9 @@ class TestMethods < Minitest::Test
         h = {:hi => 2}
         assert_equal(false, h.my_empty?)
     end
+
+    def test_string_my_reverse_returns_string
+        s = ''
+        assert_equal(String, h.my_reverse().class)
+    end
 end

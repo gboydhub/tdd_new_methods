@@ -45,4 +45,9 @@ class TestMethods < Minitest::Test
         s = ''
         assert_equal(String, s.my_reverse().class)
     end
+
+    def test_string_my_reverse_returns_a_letter
+        s = 'a'
+        assert_equal('a', s.my_reverse())
+    end
 end

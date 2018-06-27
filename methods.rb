@@ -28,6 +28,6 @@ end
 
 class String
     def my_reverse()
-        ''
+        'a'
     end
 end

@@ -15,4 +15,9 @@ class TestMethods < Minitest::Test
         t = [1]
         assert_equal([1], t.my_rotate(0))
     end
+
+    def test_my_rotate_shifts_1
+        t = [1, 2]
+        assert_equal([2, 1], t.my_rotate(1))
+    end
 end

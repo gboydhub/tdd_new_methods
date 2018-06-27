@@ -19,6 +19,9 @@ end
 
 class Hash
     def my_empty?()
+        self.each do
+            return false
+        end
         true
     end
 end

@@ -55,4 +55,9 @@ class TestMethods < Minitest::Test
         s = 'ab'
         assert_equal('ba', s.my_reverse())
     end
+
+    def test_string_my_reverse_on_complex
+        s = 'Hello'
+        assert_equal('olleH', s.my_reverse())
+    end
 end

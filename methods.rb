@@ -28,6 +28,14 @@ end
 
 class String
     def my_reverse()
-        'a'
+        str_array = self.split('')
+        new_str = ''
+        counter = str_array.length-1
+        while counter >= 0
+            new_str += str_array[counter]
+            counter -= 1
+        end
+
+        new_str
     end
 end

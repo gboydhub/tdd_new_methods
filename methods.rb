@@ -25,3 +25,9 @@ class Hash
         true
     end
 end
+
+class String
+    def my_reverse()
+        ''
+    end
+end

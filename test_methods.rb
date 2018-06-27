@@ -43,6 +43,6 @@ class TestMethods < Minitest::Test
 
     def test_string_my_reverse_returns_string
         s = ''
-        assert_equal(String, h.my_reverse().class)
+        assert_equal(String, s.my_reverse().class)
     end
 end

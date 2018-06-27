@@ -25,4 +25,9 @@ class TestMethods < Minitest::Test
         t = [1, 2, 3, 4, 5]
         assert_equal([3, 4, 5, 1, 2], t.my_rotate(3))
     end
+
+    def test_my_rotate_shifts_negative_2
+        t = [1, 2, 3, 4]
+        assert_equal([3, 4, 1, 2], t.my_rotate(-2))
+    end
 end

@@ -79,4 +79,9 @@ class TestMethods < Minitest::Test
             count += 1
         end
     end
+
+    def test_hash_my_to_a
+        hsh = {'foo' => 3, 'bar' => 1}
+        assert_equal([['foo', 3], ['bar', 1]], hsh.my_to_a)
+    end
 end

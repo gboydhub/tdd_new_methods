@@ -38,6 +38,14 @@ class Hash
         end
         true
     end
+
+    def my_to_a()
+        ret_arr = []
+        self.each_pair do |key, val|
+            ret_arr << [key, val]
+        end
+        ret_arr
+    end
 end
 
 class String

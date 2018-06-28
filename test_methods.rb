@@ -60,4 +60,13 @@ class TestMethods < Minitest::Test
         s = 'Hello'
         assert_equal('olleH', s.my_reverse())
     end
+
+    def test_array_my_each
+        arr = [1, 2, 3, 4]
+        count = 0
+        arr.my_each do |x|
+            assert_equal(arr[count], x)
+            count += 1
+        end
+    end
 end

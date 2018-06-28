@@ -21,6 +21,14 @@ class Array
             yield self[x]
         end
     end
+    
+    def my_each_with_index()
+        counter = 0
+        while counter < self.length do
+            yield self[counter], counter
+            counter += 1
+        end
+    end
 end
 
 class Hash

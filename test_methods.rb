@@ -69,4 +69,13 @@ class TestMethods < Minitest::Test
             count += 1
         end
     end
+
+    def test_array_my_each_with_index
+        arr = [1, 2, 3, 4]
+        count = 0
+        arr.my_each_with_index do |val, ind|
+            assert_equal(arr[count], val)
+            assert_equal(count, ind)
+        end
+    end
 end

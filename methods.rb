@@ -15,6 +15,12 @@ class Array
 
         newarr
     end
+
+    def my_each()
+        0.upto(self.length-1) do |x|
+            yield self[x]
+        end
+    end
 end
 
 class Hash
